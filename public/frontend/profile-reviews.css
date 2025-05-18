@@ -1,0 +1,366 @@
+/* Styles spécifiques pour la page des évaluations */
+
+/* Filtres des évaluations */
+.reviews-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-group label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #ccc;
+}
+
+.filter-select {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  min-width: 140px;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #ff9800;
+}
+
+.search-group {
+  display: flex;
+  gap: 5px;
+}
+
+.search-input {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  min-width: 200px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #ff9800;
+}
+
+.search-btn {
+  background-color: #ff9800;
+  color: #000;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #ff5722;
+}
+
+/* Liste des évaluations */
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.review-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* En-tête de l'évaluation */
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.anime-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.anime-info img {
+  width: 60px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.anime-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.anime-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.anime-meta {
+  display: flex;
+  gap: 5px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.divider {
+  color: #666;
+}
+
+.review-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.star.filled {
+  color: #FFC107;
+}
+
+.star.half-filled {
+  position: relative;
+  color: #555;
+}
+
+.star.half-filled::before {
+  content: '★';
+  position: absolute;
+  color: #FFC107;
+  overflow: hidden;
+  width: 50%;
+}
+
+.rating-value {
+  font-weight: 700;
+  color: #FFC107;
+  font-size: 0.9rem;
+}
+
+/* Contenu de l'évaluation */
+.review-content {
+  padding: 20px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #ddd;
+}
+
+.review-content p {
+  margin-bottom: 15px;
+}
+
+.review-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Pied de l'évaluation */
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.review-date {
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.review-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.action-btn:hover {
+  color: #ff9800;
+}
+
+.action-btn.like:hover {
+  color: #4CAF50;
+}
+
+.action-btn.comment:hover {
+  color: #2196F3;
+}
+
+.action-icon {
+  font-size: 1.1rem;
+}
+
+.action-count {
+  font-size: 0.9rem;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 30px;
+}
+
+.page-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page-btn.next {
+  width: auto;
+  padding: 0 15px;
+  border-radius: 20px;
+}
+
+.page-btn:hover, .page-btn.active {
+  background-color: #ff9800;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 1rem;
+  width: 40px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 992px) {
+  .reviews-filters {
+    flex-direction: column;
+  }
+  
+  .search-group {
+    width: 100%;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .review-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .review-rating {
+    align-self: flex-end;
+  }
+  
+  .review-footer {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+  
+  .review-actions {
+    align-self: flex-end;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .anime-info {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .anime-info img {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 10px;
+  }
+  
+  .anime-details {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .anime-meta {
+    justify-content: center;
+  }
+  
+  .review-rating {
+    align-self: center;
+    margin-top: 10px;
+  }
+  
+  .review-footer {
+    align-items: center;
+  }
+  
+  .review-actions {
+    align-self: center;
+  }
+} 

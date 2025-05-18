@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المفضلة - بوابتكم المغربية للأنمي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile-styles.css">
+    <link rel="stylesheet" href="profile-favorites.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <h1>بوابتكم المغربية للأنمي</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="top100.html">TOP 100</a></li>
+                <li><a href="profile-overview.html" class="active">الملف الشخصي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="app-container">
+        <div class="profile-header">
+            <div class="profile-cover"></div>
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="User Avatar">
+                </div>
+                <div class="profile-details">
+                    <h1 class="profile-name">AnimeLoover2023</h1>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">250</span>
+                            <span class="stat-label">الأنمي المشاهد</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">186</span>
+                            <span class="stat-label">الحلقات</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">35</span>
+                            <span class="stat-label">المراجعات</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">72</span>
+                            <span class="stat-label">المفضلة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-navigation">
+            <a href="profile-overview.html" class="nav-item">نظرة عامة</a>
+            <a href="profile-animelist.html" class="nav-item">قائمة الأنمي</a>
+            <a href="profile-favorites.html" class="nav-item active">المفضلة</a>
+            <a href="profile-reviews.html" class="nav-item">المراجعات</a>
+        </div>
+
+        <!-- Favorites Section -->
+        <div class="content-section active" id="favorites">
+            <div class="section-header">
+                <h2 class="section-title">المفضلة</h2>
+            </div>
+            
+            <div class="favorite-tabs">
+                <a href="#anime" class="favorite-tab active">أنمي</a>
+                <a href="#characters" class="favorite-tab">شخصيات</a>
+                <a href="#studios" class="favorite-tab">استوديوهات</a>
+            </div>
+            
+            <div class="tab-content active" id="anime">
+                <div class="favorites-grid">
+                    <!-- Favorite Anime 1 -->
+                    <div class="favorite-card">
+                        <div class="card-rank">1</div>
+                        <div class="card-poster">
+                            <img src="https://cdn.myanimelist.net/images/anime/5/87048.jpg" alt="Your Name">
+                            <div class="card-overlay">
+                                <span class="card-rating">★ 4.5</span>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Your Name</h3>
+                            <div class="card-meta">
+                                <span class="year">2016</span>
+                                <span class="divider">•</span>
+                                <span class="type">فيلم</span>
+                            </div>
+                            <div class="card-genres">
+                                <span class="genre">Romance</span>
+                                <span class="genre">Drama</span>
+                                <span class="genre">Supernatural</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Favorite Anime 2 -->
+                    <div class="favorite-card">
+                        <div class="card-rank">2</div>
+                        <div class="card-poster">
+                            <img src="https://cdn.myanimelist.net/images/anime/11/33657.jpg" alt="Hunter x Hunter">
+                            <div class="card-overlay">
+                                <span class="card-rating">★ 4.8</span>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Hunter x Hunter (2011)</h3>
+                            <div class="card-meta">
+                                <span class="year">2011</span>
+                                <span class="divider">•</span>
+                                <span class="type">TV</span>
+                            </div>
+                            <div class="card-genres">
+                                <span class="genre">Action</span>
+                                <span class="genre">Adventure</span>
+                                <span class="genre">Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Favorite Anime 3 -->
+                    <div class="favorite-card">
+                        <div class="card-rank">3</div>
+                        <div class="card-poster">
+                            <img src="https://cdn.myanimelist.net/images/anime/10/18793.jpg" alt="One Piece">
+                            <div class="card-overlay">
+                                <span class="card-rating">★ 4.7</span>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">One Piece</h3>
+                            <div class="card-meta">
+                                <span class="year">1999</span>
+                                <span class="divider">•</span>
+                                <span class="type">TV</span>
+                            </div>
+                            <div class="card-genres">
+                                <span class="genre">Action</span>
+                                <span class="genre">Adventure</span>
+                                <span class="genre">Comedy</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Favorite Anime 4 -->
+                    <div class="favorite-card">
+                        <div class="card-rank">4</div>
+                        <div class="card-poster">
+                            <img src="https://cdn.myanimelist.net/images/anime/9/9453.jpg" alt="Death Note">
+                            <div class="card-overlay">
+                                <span class="card-rating">★ 4.6</span>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Death Note</h3>
+                            <div class="card-meta">
+                                <span class="year">2006</span>
+                                <span class="divider">•</span>
+                                <span class="type">TV</span>
+                            </div>
+                            <div class="card-genres">
+                                <span class="genre">Mystery</span>
+                                <span class="genre">Psychological</span>
+                                <span class="genre">Thriller</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Favorite Anime 5 -->
+                    <div class="favorite-card">
+                        <div class="card-rank">5</div>
+                        <div class="card-poster">
+                            <img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Demon Slayer">
+                            <div class="card-overlay">
+                                <span class="card-rating">★ 4.4</span>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Demon Slayer</h3>
+                            <div class="card-meta">
+                                <span class="year">2019</span>
+                                <span class="divider">•</span>
+                                <span class="type">TV</span>
+                            </div>
+                            <div class="card-genres">
+                                <span class="genre">Action</span>
+                                <span class="genre">Fantasy</span>
+                                <span class="genre">Historical</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Favorite Anime 6 -->
+                    <div class="favorite-card">
+                        <div class="card-rank">6</div>
+                        <div class="card-poster">
+                            <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                            <div class="card-overlay">
+                                <span class="card-rating">★ 4.9</span>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Fullmetal Alchemist: Brotherhood</h3>
+                            <div class="card-meta">
+                                <span class="year">2009</span>
+                                <span class="divider">•</span>
+                                <span class="type">TV</span>
+                            </div>
+                            <div class="card-genres">
+                                <span class="genre">Action</span>
+                                <span class="genre">Adventure</span>
+                                <span class="genre">Drama</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Show More Button -->
+                <div class="show-more">
+                    <button class="show-more-btn">عرض المزيد</button>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="characters">
+                <div class="favorites-grid">
+                    <!-- Favorite Character 1 -->
+                    <div class="favorite-card character">
+                        <div class="card-rank">1</div>
+                        <div class="card-poster">
+                            <img src="animedetail/frieren_bg.png" alt="Frieren">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Frieren</h3>
+                            <div class="card-meta">
+                                <span class="anime">Frieren: Beyond Journey's End</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Favorite Character 2 -->
+                    <div class="favorite-card character">
+                        <div class="card-rank">2</div>
+                        <div class="card-poster">
+                            <img src="https://cdn.myanimelist.net/images/characters/9/310307.jpg" alt="Monkey D. Luffy">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Monkey D. Luffy</h3>
+                            <div class="card-meta">
+                                <span class="anime">One Piece</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Favorite Character 3 -->
+                    <div class="favorite-card character">
+                        <div class="card-rank">3</div>
+                        <div class="card-poster">
+                            <img src="https://cdn.myanimelist.net/images/characters/10/216895.jpg" alt="L Lawliet">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">L Lawliet</h3>
+                            <div class="card-meta">
+                                <span class="anime">Death Note</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Show More Button -->
+                <div class="show-more">
+                    <button class="show-more-btn">عرض المزيد</button>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="studios">
+                <div class="favorites-grid studios">
+                    <!-- Favorite Studio 1 -->
+                    <div class="favorite-card studio">
+                        <div class="card-rank">1</div>
+                        <div class="studio-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Ghibli_logo.svg/1200px-Ghibli_logo.svg.png" alt="Studio Ghibli">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Studio Ghibli</h3>
+                            <div class="card-meta">
+                                <span class="works">30 عمل</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Favorite Studio 2 -->
+                    <div class="favorite-card studio">
+                        <div class="card-rank">2</div>
+                        <div class="studio-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/MAPPA_Logo.svg/1280px-MAPPA_Logo.svg.png" alt="MAPPA">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">MAPPA</h3>
+                            <div class="card-meta">
+                                <span class="works">25 عمل</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Favorite Studio 3 -->
+                    <div class="favorite-card studio">
+                        <div class="card-rank">3</div>
+                        <div class="studio-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Madhouse_company_logo.svg/2560px-Madhouse_company_logo.svg.png" alt="Madhouse">
+                        </div>
+                        <div class="card-info">
+                            <h3 class="card-title">Madhouse</h3>
+                            <div class="card-meta">
+                                <span class="works">20 عمل</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>بوابتكم المغربية للأنمي</h2>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="top100.html">TOP 100</a></li>
+                        <li><a href="profile-overview.html">الملف الشخصي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>التصنيفات</h3>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>جميع الحقوق محفوظة © 2023 بوابتكم المغربية للأنمي</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Favorite tabs navigation
+            const tabs = document.querySelectorAll('.favorite-tab');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all tabs and contents
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+                    
+                    // Add active class to clicked tab
+                    this.classList.add('active');
+                    
+                    // Show corresponding content
+                    const targetId = this.getAttribute('href').substring(1);
+                    document.getElementById(targetId).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html> 

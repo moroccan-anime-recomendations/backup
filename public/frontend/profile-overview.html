@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نظرة عامة - بوابتكم المغربية للأنمي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="profile-styles.css">
+    <link rel="stylesheet" href="profile-overview.css">
+</head>
+<body>
+    <!-- La navbar est maintenant générée par JavaScript -->
+
+    <div class="app-container">
+        <div class="profile-header">
+            <div class="profile-cover"></div>
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="User Avatar">
+                </div>
+                <div class="profile-details">
+                    <h1 class="profile-name">AnimeLoover2023</h1>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">250</span>
+                            <span class="stat-label">الأنمي المشاهد</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">186</span>
+                            <span class="stat-label">الحلقات</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">35</span>
+                            <span class="stat-label">المراجعات</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">72</span>
+                            <span class="stat-label">المفضلة</span>
+                        </div>
+                    </div>
+                    <div class="profile-bio">
+                        <p>متحمس للأنمي وعاشق لأنواع: الخيال، المغامرات، والأكشن. نشيط في مجتمع الأنمي المغربي منذ 2019.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-navigation">
+            <a href="profile-overview.html" class="nav-item active">نظرة عامة</a>
+            <a href="profile-animelist.html" class="nav-item">قائمة الأنمي</a>
+            <a href="profile-favorites.html" class="nav-item">المفضلة</a>
+            <a href="profile-reviews.html" class="nav-item">المراجعات</a>
+        </div>
+
+        <!-- Overview Section -->
+        <div class="content-section active" id="overview">
+            <div class="section-header">
+                <h2 class="section-title">النشاط الأخير</h2>
+            </div>
+            
+            <div class="activity-feed">
+                <!-- Activity Item 1 -->
+                <div class="activity-item">
+                    <div class="activity-icon watching"></div>
+                    <div class="activity-content">
+                        <div class="activity-header">
+                            <span class="activity-type">بدأ مشاهدة</span>
+                            <span class="activity-time">منذ 3 ساعات</span>
+                        </div>
+                        <div class="activity-anime">
+                            <img src="https://cdn.myanimelist.net/images/anime/1171/109222.jpg" alt="Jujutsu Kaisen">
+                            <div class="anime-info">
+                                <h3 class="anime-title">Jujutsu Kaisen (Season 2)</h3>
+                                <div class="anime-progress">الحلقة 5 من 23</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Activity Item 2 -->
+                <div class="activity-item">
+                    <div class="activity-icon completed"></div>
+                    <div class="activity-content">
+                        <div class="activity-header">
+                            <span class="activity-type">أكمل مشاهدة</span>
+                            <span class="activity-time">منذ يومين</span>
+                        </div>
+                        <div class="activity-anime">
+                            <img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Demon Slayer">
+                            <div class="anime-info">
+                                <h3 class="anime-title">Demon Slayer: Kimetsu no Yaiba</h3>
+                                <div class="anime-progress">26 حلقة</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Activity Item 3 -->
+                <div class="activity-item">
+                    <div class="activity-icon review"></div>
+                    <div class="activity-content">
+                        <div class="activity-header">
+                            <span class="activity-type">نشر مراجعة</span>
+                            <span class="activity-time">منذ 5 أيام</span>
+                        </div>
+                        <div class="activity-review">
+                            <div class="review-anime">
+                                <img src="https://cdn.myanimelist.net/images/anime/5/87048.jpg" alt="Your Name">
+                                <h3 class="anime-title">Your Name</h3>
+                            </div>
+                            <div class="review-rating">
+                                <div class="stars">
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star filled">★</span>
+                                    <span class="star half-filled">★</span>
+                                </div>
+                                <span class="rating-value">4.5/5</span>
+                            </div>
+                            <p class="review-excerpt">فيلم رائع يجمع بين الرومانسية والخيال العلمي بطريقة مبتكرة. الرسوم والموسيقى كانت استثنائية...</p>
+                            <a href="profile-reviews.html" class="review-link">قراءة المزيد</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Activity Item 4 -->
+                <div class="activity-item">
+                    <div class="activity-icon added"></div>
+                    <div class="activity-content">
+                        <div class="activity-header">
+                            <span class="activity-type">أضاف إلى المفضلة</span>
+                            <span class="activity-time">منذ أسبوع</span>
+                        </div>
+                        <div class="activity-anime">
+                            <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                            <div class="anime-info">
+                                <h3 class="anime-title">Fullmetal Alchemist: Brotherhood</h3>
+                                <div class="anime-progress">الأنمي مكتمل</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Currently Watching -->
+            <div class="subsection">
+                <div class="subsection-header">
+                    <h3 class="subsection-title">يشاهد حاليًا</h3>
+                    <a href="profile-animelist.html" class="view-all">عرض الكل</a>
+                </div>
+                <div class="watching-grid">
+                    <!-- Anime 1 -->
+                    <a href="animedetail.html?id=1" class="watching-item">
+                        <div class="anime-poster">
+                            <img src="https://cdn.myanimelist.net/images/anime/1171/109222.jpg" alt="Jujutsu Kaisen">
+                            <div class="anime-progress-bar">
+                                <div class="progress" style="width: 22%;"></div>
+                            </div>
+                        </div>
+                        <h4 class="anime-title">Jujutsu Kaisen (Season 2)</h4>
+                        <div class="anime-episode">الحلقة 5/23</div>
+                    </a>
+                    
+                    <!-- Anime 2 -->
+                    <a href="animedetail.html?id=2" class="watching-item">
+                        <div class="anime-poster">
+                            <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                            <div class="anime-progress-bar">
+                                <div class="progress" style="width: 78%;"></div>
+                            </div>
+                        </div>
+                        <h4 class="anime-title">Fullmetal Alchemist: Brotherhood</h4>
+                        <div class="anime-episode">الحلقة 50/64</div>
+                    </a>
+                    
+                    <!-- Anime 3 -->
+                    <a href="animedetail.html?id=3" class="watching-item">
+                        <div class="anime-poster">
+                            <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="Attack on Titan">
+                            <div class="anime-progress-bar">
+                                <div class="progress" style="width: 45%;"></div>
+                            </div>
+                        </div>
+                        <h4 class="anime-title">Attack on Titan (Final Season)</h4>
+                        <div class="anime-episode">الحلقة 9/20</div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Favorites Preview -->
+            <div class="subsection">
+                <div class="subsection-header">
+                    <h3 class="subsection-title">المفضلة</h3>
+                    <a href="profile-favorites.html" class="view-all">عرض الكل</a>
+                </div>
+                <div class="favorites-grid">
+                    <!-- Favorite 1 -->
+                    <a href="animedetail.html?id=4" class="favorite-item">
+                        <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                        <div class="favorite-title">Fullmetal Alchemist: Brotherhood</div>
+                    </a>
+                    
+                    <!-- Favorite 2 -->
+                    <a href="animedetail.html?id=5" class="favorite-item">
+                        <img src="https://cdn.myanimelist.net/images/anime/5/87048.jpg" alt="Your Name">
+                        <div class="favorite-title">Your Name</div>
+                    </a>
+                    
+                    <!-- Favorite 3 -->
+                    <a href="animedetail.html?id=6" class="favorite-item">
+                        <img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Demon Slayer">
+                        <div class="favorite-title">Demon Slayer: Kimetsu no Yaiba</div>
+                    </a>
+                    
+                    <!-- Favorite 4 -->
+                    <a href="animedetail.html?id=7" class="favorite-item">
+                        <img src="https://cdn.myanimelist.net/images/anime/10/47347.jpg" alt="Attack on Titan">
+                        <div class="favorite-title">Attack on Titan</div>
+                    </a>
+                    
+                    <!-- Favorite 5 -->
+                    <a href="animedetail.html?id=8" class="favorite-item">
+                        <img src="https://cdn.myanimelist.net/images/anime/9/9453.jpg" alt="Death Note">
+                        <div class="favorite-title">Death Note</div>
+                    </a>
+                    
+                    <!-- Favorite 6 -->
+                    <a href="animedetail.html?id=9" class="favorite-item">
+                        <img src="https://cdn.myanimelist.net/images/anime/1015/138006.jpg" alt="Frieren: Beyond Journey's End">
+                        <div class="favorite-title">Frieren: Beyond Journey's End</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Le footer est maintenant généré par JavaScript -->
+
+    <!-- Scripts -->
+    <script src="navbar.js"></script>
+    <script src="footer.js"></script>
+    <script src="main.js"></script>
+    <script src="animations.js"></script>
+</body>
+</html> 

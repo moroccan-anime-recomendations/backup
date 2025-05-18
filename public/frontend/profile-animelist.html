@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة الأنمي - بوابتكم المغربية للأنمي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile-styles.css">
+    <link rel="stylesheet" href="profile-animelist.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <h1>بوابتكم المغربية للأنمي</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="top100.html">TOP 100</a></li>
+                <li><a href="profile-overview.html" class="active">الملف الشخصي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="app-container">
+        <div class="profile-header">
+            <div class="profile-cover"></div>
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="User Avatar">
+                </div>
+                <div class="profile-details">
+                    <h1 class="profile-name">AnimeLoover2023</h1>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">250</span>
+                            <span class="stat-label">الأنمي المشاهد</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">186</span>
+                            <span class="stat-label">الحلقات</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">35</span>
+                            <span class="stat-label">المراجعات</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">72</span>
+                            <span class="stat-label">المفضلة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-navigation">
+            <a href="profile-overview.html" class="nav-item">نظرة عامة</a>
+            <a href="profile-animelist.html" class="nav-item active">قائمة الأنمي</a>
+            <a href="profile-favorites.html" class="nav-item">المفضلة</a>
+            <a href="profile-reviews.html" class="nav-item">المراجعات</a>
+        </div>
+
+        <!-- Anime List Section -->
+        <div class="content-section active" id="animelist">
+            <div class="section-header">
+                <h2 class="section-title">قائمة الأنمي</h2>
+            </div>
+            
+            <div class="anime-list-filters">
+                <div class="filter-group">
+                    <label for="status-filter">الحالة:</label>
+                    <select id="status-filter" class="filter-select">
+                        <option value="all">الكل</option>
+                        <option value="watching">يشاهد حاليًا</option>
+                        <option value="completed">مكتمل</option>
+                        <option value="on-hold">متوقف مؤقتًا</option>
+                        <option value="dropped">متوقف</option>
+                        <option value="plan-to-watch">في خطة المشاهدة</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort-filter">الترتيب:</label>
+                    <select id="sort-filter" class="filter-select">
+                        <option value="title">العنوان</option>
+                        <option value="score">التقييم</option>
+                        <option value="progress">التقدم</option>
+                        <option value="recently-updated">آخر تحديث</option>
+                    </select>
+                </div>
+                <div class="search-group">
+                    <input type="text" placeholder="بحث في القائمة..." class="search-input">
+                    <button class="search-btn">بحث</button>
+                </div>
+            </div>
+
+            <div class="anime-list">
+                <div class="list-header">
+                    <div class="header-title">العنوان</div>
+                    <div class="header-score">التقييم</div>
+                    <div class="header-progress">التقدم</div>
+                    <div class="header-type">النوع</div>
+                    <div class="header-status">الحالة</div>
+                </div>
+
+                <!-- Currently Watching -->
+                <div class="list-section">
+                    <h3 class="list-section-title">يشاهد حاليًا</h3>
+                    
+                    <!-- Anime 1 -->
+                    <div class="anime-list-item">
+                        <div class="anime-info">
+                            <img src="https://cdn.myanimelist.net/images/anime/1171/109222.jpg" alt="Jujutsu Kaisen">
+                            <div class="anime-details">
+                                <h4 class="anime-title">Jujutsu Kaisen (Season 2)</h4>
+                                <div class="anime-meta">
+                                    <span class="year">2023</span>
+                                    <span class="divider">•</span>
+                                    <span class="episodes">23 حلقة</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="anime-score">
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star half-filled">★</span>
+                            </div>
+                            <span class="score-value">4.5</span>
+                        </div>
+                        <div class="anime-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 22%;"></div>
+                            </div>
+                            <span class="progress-text">5 / 23</span>
+                        </div>
+                        <div class="anime-type">TV</div>
+                        <div class="anime-status watching">يشاهد حاليًا</div>
+                    </div>
+                    
+                    <!-- Anime 2 -->
+                    <div class="anime-list-item">
+                        <div class="anime-info">
+                            <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                            <div class="anime-details">
+                                <h4 class="anime-title">Fullmetal Alchemist: Brotherhood</h4>
+                                <div class="anime-meta">
+                                    <span class="year">2009</span>
+                                    <span class="divider">•</span>
+                                    <span class="episodes">64 حلقة</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="anime-score">
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                            <span class="score-value">5.0</span>
+                        </div>
+                        <div class="anime-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 78%;"></div>
+                            </div>
+                            <span class="progress-text">50 / 64</span>
+                        </div>
+                        <div class="anime-type">TV</div>
+                        <div class="anime-status watching">يشاهد حاليًا</div>
+                    </div>
+                </div>
+
+                <!-- Completed -->
+                <div class="list-section">
+                    <h3 class="list-section-title">مكتمل</h3>
+                    
+                    <!-- Anime 3 -->
+                    <div class="anime-list-item">
+                        <div class="anime-info">
+                            <img src="https://cdn.myanimelist.net/images/anime/1286/99889.jpg" alt="Demon Slayer">
+                            <div class="anime-details">
+                                <h4 class="anime-title">Demon Slayer: Kimetsu no Yaiba</h4>
+                                <div class="anime-meta">
+                                    <span class="year">2019</span>
+                                    <span class="divider">•</span>
+                                    <span class="episodes">26 حلقة</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="anime-score">
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <span class="score-value">4.0</span>
+                        </div>
+                        <div class="anime-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%;"></div>
+                            </div>
+                            <span class="progress-text">26 / 26</span>
+                        </div>
+                        <div class="anime-type">TV</div>
+                        <div class="anime-status completed">مكتمل</div>
+                    </div>
+                    
+                    <!-- Anime 4 -->
+                    <div class="anime-list-item">
+                        <div class="anime-info">
+                            <img src="https://cdn.myanimelist.net/images/anime/5/87048.jpg" alt="Your Name">
+                            <div class="anime-details">
+                                <h4 class="anime-title">Your Name</h4>
+                                <div class="anime-meta">
+                                    <span class="year">2016</span>
+                                    <span class="divider">•</span>
+                                    <span class="episodes">فيلم</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="anime-score">
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star half-filled">★</span>
+                            </div>
+                            <span class="score-value">4.5</span>
+                        </div>
+                        <div class="anime-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 100%;"></div>
+                            </div>
+                            <span class="progress-text">مكتمل</span>
+                        </div>
+                        <div class="anime-type">فيلم</div>
+                        <div class="anime-status completed">مكتمل</div>
+                    </div>
+                </div>
+
+                <!-- Plan to Watch -->
+                <div class="list-section">
+                    <h3 class="list-section-title">في خطة المشاهدة</h3>
+                    
+                    <!-- Anime 5 -->
+                    <div class="anime-list-item">
+                        <div class="anime-info">
+                            <img src="https://cdn.myanimelist.net/images/anime/1708/138033.jpg" alt="Kusuriya no Hitorigoto">
+                            <div class="anime-details">
+                                <h4 class="anime-title">Kusuriya no Hitorigoto</h4>
+                                <div class="anime-meta">
+                                    <span class="year">2023</span>
+                                    <span class="divider">•</span>
+                                    <span class="episodes">24 حلقة</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="anime-score">
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <span class="score-value">-</span>
+                        </div>
+                        <div class="anime-progress">
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 0%;"></div>
+                            </div>
+                            <span class="progress-text">0 / 24</span>
+                        </div>
+                        <div class="anime-type">TV</div>
+                        <div class="anime-status plan">في خطة المشاهدة</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="dots">...</span>
+                <button class="page-btn">10</button>
+                <button class="page-btn next">التالي →</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>بوابتكم المغربية للأنمي</h2>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="top100.html">TOP 100</a></li>
+                        <li><a href="profile-overview.html">الملف الشخصي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>التصنيفات</h3>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>جميع الحقوق محفوظة © 2023 بوابتكم المغربية للأنمي</p>
+        </div>
+    </footer>
+</body>
+</html> 

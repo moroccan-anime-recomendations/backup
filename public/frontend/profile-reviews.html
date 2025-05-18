@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المراجعات - بوابتكم المغربية للأنمي</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profile-styles.css">
+    <link rel="stylesheet" href="profile-reviews.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="logo">
+            <h1>بوابتكم المغربية للأنمي</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="top100.html">TOP 100</a></li>
+                <li><a href="profile-overview.html" class="active">الملف الشخصي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="app-container">
+        <div class="profile-header">
+            <div class="profile-cover"></div>
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <img src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="User Avatar">
+                </div>
+                <div class="profile-details">
+                    <h1 class="profile-name">AnimeLoover2023</h1>
+                    <div class="profile-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">250</span>
+                            <span class="stat-label">الأنمي المشاهد</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">186</span>
+                            <span class="stat-label">الحلقات</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">35</span>
+                            <span class="stat-label">المراجعات</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">72</span>
+                            <span class="stat-label">المفضلة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-navigation">
+            <a href="profile-overview.html" class="nav-item">نظرة عامة</a>
+            <a href="profile-animelist.html" class="nav-item">قائمة الأنمي</a>
+            <a href="profile-favorites.html" class="nav-item">المفضلة</a>
+            <a href="profile-reviews.html" class="nav-item active">المراجعات</a>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="content-section active" id="reviews">
+            <div class="section-header">
+                <h2 class="section-title">المراجعات</h2>
+            </div>
+            
+            <div class="reviews-filters">
+                <div class="filter-group">
+                    <label for="sort-filter">الترتيب:</label>
+                    <select id="sort-filter" class="filter-select">
+                        <option value="recent">الأحدث</option>
+                        <option value="oldest">الأقدم</option>
+                        <option value="highest-rated">التقييم الأعلى</option>
+                        <option value="lowest-rated">التقييم الأدنى</option>
+                    </select>
+                </div>
+                <div class="search-group">
+                    <input type="text" placeholder="بحث في المراجعات..." class="search-input">
+                    <button class="search-btn">بحث</button>
+                </div>
+            </div>
+            
+            <div class="reviews-list">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="anime-info">
+                            <img src="https://cdn.myanimelist.net/images/anime/5/87048.jpg" alt="Your Name">
+                            <div class="anime-details">
+                                <h3 class="anime-title">Your Name</h3>
+                                <div class="anime-meta">
+                                    <span class="year">2016</span>
+                                    <span class="divider">•</span>
+                                    <span class="type">فيلم</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star half-filled">★</span>
+                            </div>
+                            <span class="rating-value">4.5/5</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>فيلم رائع يجمع بين الرومانسية والخيال العلمي بطريقة مبتكرة. الرسوم والموسيقى كانت استثنائية، والقصة عميقة ومؤثرة. أحببت التطور الجيد للشخصيات وكيف ارتبطوا ببعضهم البعض رغم المسافة والوقت.</p>
+                        <p>يتميز الفيلم بالمناظر الطبيعية الخلابة والتفاصيل الدقيقة في الرسم، مما يجعله تحفة فنية بصرية. كما أن الموسيقى التصويرية تكمل المشاهد بشكل مثالي وتضيف عمقاً عاطفياً للأحداث.</p>
+                    </div>
+                    <div class="review-footer">
+                        <span class="review-date">منذ 5 أيام</span>
+                        <div class="review-actions">
+                            <button class="action-btn like">
+                                <span class="action-icon">👍</span>
+                                <span class="action-count">15</span>
+                            </button>
+                            <button class="action-btn comment">
+                                <span class="action-icon">💬</span>
+                                <span class="action-count">3</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="anime-info">
+                            <img src="https://cdn.myanimelist.net/images/anime/1223/96541.jpg" alt="Fullmetal Alchemist: Brotherhood">
+                            <div class="anime-details">
+                                <h3 class="anime-title">Fullmetal Alchemist: Brotherhood</h3>
+                                <div class="anime-meta">
+                                    <span class="year">2009</span>
+                                    <span class="divider">•</span>
+                                    <span class="type">TV</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                            </div>
+                            <span class="rating-value">5/5</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>واحد من أفضل الأنميات التي شاهدتها، مع قصة متكاملة ومتقنة من البداية إلى النهاية. تطور الشخصيات ممتاز، والعلاقات بينهم عميقة ومؤثرة. المعارك والأكشن تم تنفيذها بشكل رائع، والحبكة مليئة بالتشويق والمفاجآت.</p>
+                        <p>تناقش السلسلة العديد من المواضيع العميقة مثل الجشع، الإنسانية، التضحية، والحب العائلي. كل شخصية لها قصتها الخاصة ومواجهاتها التي تجعلك تتعاطف معها. القصة متماسكة ومترابطة، وتنتهي بطريقة مرضية تماماً.</p>
+                    </div>
+                    <div class="review-footer">
+                        <span class="review-date">منذ أسبوعين</span>
+                        <div class="review-actions">
+                            <button class="action-btn like">
+                                <span class="action-icon">👍</span>
+                                <span class="action-count">23</span>
+                            </button>
+                            <button class="action-btn comment">
+                                <span class="action-icon">💬</span>
+                                <span class="action-count">7</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="anime-info">
+                            <img src="https://cdn.myanimelist.net/images/anime/9/9453.jpg" alt="Death Note">
+                            <div class="anime-details">
+                                <h3 class="anime-title">Death Note</h3>
+                                <div class="anime-meta">
+                                    <span class="year">2006</span>
+                                    <span class="divider">•</span>
+                                    <span class="type">TV</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star filled">★</span>
+                                <span class="star">★</span>
+                            </div>
+                            <span class="rating-value">4/5</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <p>سلسلة رائعة توفر حبكة مشوقة ولعبة ذكاء بين بطلين متناقضين. النصف الأول من السلسلة يعتبر من أفضل ما شاهدت، مع تحدٍ فكري وإثارة نفسية عالية. أحببت تطور الشخصيات خاصة لايت وكيف تغير مع الوقت.</p>
+                        <p>الموسيقى التصويرية أيضًا كانت ممتازة وتضيف جواً من التوتر والإثارة. النصف الثاني من السلسلة يعاني من بعض التباطؤ، لكن النهاية كانت مرضية ومناسبة للقصة. بشكل عام، سلسلة تستحق المشاهدة خاصة لمحبي الثريلر والدراما النفسية.</p>
+                    </div>
+                    <div class="review-footer">
+                        <span class="review-date">منذ شهر</span>
+                        <div class="review-actions">
+                            <button class="action-btn like">
+                                <span class="action-icon">👍</span>
+                                <span class="action-count">19</span>
+                            </button>
+                            <button class="action-btn comment">
+                                <span class="action-icon">💬</span>
+                                <span class="action-count">5</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="dots">...</span>
+                <button class="page-btn">7</button>
+                <button class="page-btn next">التالي →</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>بوابتكم المغربية للأنمي</h2>
+            </div>
+            <div class="footer-links">
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="top100.html">TOP 100</a></li>
+                        <li><a href="profile-overview.html">الملف الشخصي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>التصنيفات</h3>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>جميع الحقوق محفوظة © 2023 بوابتكم المغربية للأنمي</p>
+        </div>
+    </footer>
+</body>
+</html> 
